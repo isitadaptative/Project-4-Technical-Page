@@ -7,12 +7,16 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: black;
     }
+    .div code{
+        background-color: grey;
+    }
 </style>
 
 
 <main id="main-doc">
 
-    <section id="" class="main-section"> <p>
+    <section id="" class="main-section"> 
+    <p>
 <!--p element -->
     </p>
 
@@ -34,29 +38,88 @@
         <p></p>
         
         <code></code>
+        <div>
+            <p>
+
+            </p>
+        </div>
     </section>
 
     <section id="Flex_Shorthand" class="main-section">
         <header>Use the flex shorthand property.</header>
-        <!--First p element -->
+        <!-- p element -->
         <p></p>
 
-        <code></code>
+        <code>
+
+        </code>
+
+        <div>
+            <p>
+
+            </p>
+        </div>
     </section>
     
     <section id="Flex_align" class="main-section">
         <header>Use the order property to align items.</header>
-        <!--First p element -->
+        <!-- p element -->
         <p></p>
         <code></code>
+
+        <div>
+            <p>
+
+            </p>
+        </div>
     </section>
 
     <section id="Flex_align_self" class="main-section">
         <header>Use the align self property.</header>
 
-        <!--First p element -->
-        <p></p>
-        <code></code>
+        <!-- p element -->
+        <p>
+            The align self property allows you to adjust each item's alignment individually, instead of 
+            setting them all at once. Align-self accepts the same values as align-items and will override any valie set
+            by the align-items property.
+        </p>
+        <div class="div code">
+
+        <code>
+                &lt;style&gt; <br>
+                #box-container { <br>
+                  display: flex; <br>
+                  height: 500px; <br>
+             } <br>
+                #box-1 { <br>
+                background-color: dodgerblue; <br>
+                align-self: center; <br>
+                height: 200px; <br>
+                    width: 200px; <br>
+                } <br>
+          
+                #box-2 { <br>
+                background-color: orangered; <br>
+                align-self:flex-end; /* HERE*/ <br>
+                height: 200px; <br>
+                width: 200px; <br>
+                } <br>
+          
+                &lt;div id="box-container"&gt; 
+                &lt;div id="box-1"&gt;&lt;/div&gt;
+                &lt;div id="box-2"&gt;&lt;/div&gt;
+                &lt;div&gt;
+            </code>
+        </div>    
+
+        <div>
+            <p>
+                This is useful since other common adjustment techniques using the CSS properties float, clear,
+                and vertical-align do not work on flex items. 
+
+            </p>
+        </div>
+
     </section>
     <ul>
     <li>
