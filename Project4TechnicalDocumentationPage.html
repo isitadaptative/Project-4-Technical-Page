@@ -10,12 +10,32 @@
     .div code{
         background-color: grey;
     }
+    #box-contain{
+        width: 20vw;
+        height: auto;
+        background-color: white;
+        display: flex;
+    }
+    #box-1{
+        background-color: rgb(49, 95, 49);
+        height: 50px;
+        width: 50px;
+    }
+    #box-2{
+        background-color: rgb(105, 128, 105);
+        align-self:center;
+        height: 50px;
+        width: 50px;
+    }
 </style>
 
 
 <main id="main-doc">
 
-    <section id="" class="main-section"> 
+    <section id="FLEX-SHRINK" class="main-section"> 
+        <header>
+            Flex-shrink
+        </header>
     <p>
 <!--p element -->
     </p>
@@ -23,8 +43,11 @@
     <code></code>
 </section>
     
-    <section id="Flex_Grow" class="main-section">
-        <header>Use the flex-grow property to expand items.</header>
+    <section id="FLEX-GROW" class="main-section">
+        <header>
+            flex-grow 
+        </header>
+
         <p> <!--p element --> 
 
         </p>
@@ -32,8 +55,11 @@
         <code></code>
     </section>
     
-    <section id="Flex_Basis" class="main-section">
-        <header>Use the flex-basis property to set the initial size of a item.</header>
+    <section id="FLEX-BASIS" class="main-section">
+        <header>
+            flex-basis 
+        </header>
+
         <!--First p element -->
         <p></p>
         
@@ -45,8 +71,10 @@
         </div>
     </section>
 
-    <section id="Flex_Shorthand" class="main-section">
-        <header>Use the flex shorthand property.</header>
+    <section id="FLEX-SHORTHAND" class="main-section">
+        <header>
+             flex-shorthand 
+        </header>
         <!-- p element -->
         <p></p>
 
@@ -61,8 +89,10 @@
         </div>
     </section>
     
-    <section id="Flex_align" class="main-section">
-        <header>Use the order property to align items.</header>
+    <section id="ORDER" class="main-section">
+        <header>
+            Order 
+        </header>
         <!-- p element -->
         <p></p>
         <code></code>
@@ -74,8 +104,10 @@
         </div>
     </section>
 
-    <section id="Flex_align_self" class="main-section">
-        <header>Use the align self property.</header>
+    <section id="ALIGN_SELF" class="main-section">
+        <header>
+            Align self 
+        </header>
 
         <!-- p element -->
         <p>
@@ -112,14 +144,23 @@
             </code>
         </div>    
 
-        <div>
+        <div id="box-container">
+            <div id="box-1"></div>
             <p>
                 This is useful since other common adjustment techniques using the CSS properties float, clear,
-                and vertical-align do not work on flex items. 
-
+                and vertical-align do not work on flex items. Some of the options that can be used when 
+                aligning text are:
             </p>
-        </div>
+            <ul>
+                <li>Center.</li>
+                <li>Flex-end</li>
+                <li>Flex-start</li>
+                <li>Stretch</li>
+                <li>Baseline</li>
+            </ul>
 
+        </div>
+<!--
     </section>
     <ul>
     <li>
@@ -137,7 +178,7 @@ whose solution is being built.
 
 Take the risk to rise flags and tell if something is wrong with
 the product even when considering the risks.
-
+-->
 
 
 </main>
