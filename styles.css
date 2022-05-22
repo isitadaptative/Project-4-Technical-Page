@@ -44,3 +44,13 @@
 .div code{
     background-color: grey;
 }
+
+@media(max-width:500px){
+    .nav{
+       width: 30vw;
+       height: 15vw; 
+       position: fixed;
+    }
+}
+
+
